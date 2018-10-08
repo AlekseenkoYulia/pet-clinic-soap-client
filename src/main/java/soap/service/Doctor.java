@@ -1,0 +1,67 @@
+
+package soap.service;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for doctor complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="doctor">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="lastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "doctor", propOrder = {
+    "lastName"
+})
+public class Doctor {
+
+    protected String lastName;
+
+    /**
+     * Gets the value of the lastName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getLastName() {
+        return lastName;
+    }
+
+    /**
+     * Sets the value of the lastName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setLastName(String value) {
+        this.lastName = value;
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "lastName='" + lastName + '\'' +
+                '}';
+    }
+
+}
